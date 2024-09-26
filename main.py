@@ -1,19 +1,14 @@
 import math
 
-def trapezoid_area(a, b, c, d):
-    # Вычисление полупериметра
-    p = (a + b + c + d) / 2
-    
-    # Вычисление площади по формуле Герона
-    area = math.sqrt((p - a) * (p - b) * (p - c) * (p - d))
-    return area
+trapezoid_area(a, b, c, d):
+   
+p = (a + b + c + d) / 2
 
-# Ввод значений сторон трапеции
 a = float(input("Введите длину основания a: "))
 b = float(input("Введите длину основания b: "))
 c = float(input("Введите длину боковой стороны c: "))
 d = float(input("Введите длину боковой стороны d: "))
 
 # Вычисление и вывод площади трапеции
-area = trapezoid_area(a, b, c, d)
+area = trapezoid_area(p*(p - a) * (p - b) * (p - c) * (p - d)) ** 0.5
 print(f"Площадь трапеции: {area}")
